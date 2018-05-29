@@ -89,9 +89,6 @@ class EnhancedSwitch extends React.Component {
     // increase clickable area by given % (negative number to decrease)
     increaseArea: PropTypes.string,
 
-    // true to set 'pointer' CSS cursor over enabled inputs and 'default' over disabled
-    cursor: PropTypes.bool,
-
     // set true to inherit original input's class name
     inheritClass: PropTypes.bool,
 
@@ -143,9 +140,6 @@ class EnhancedSwitch extends React.Component {
 
     // increase clickable area by given % (negative number to decrease)
     increaseArea: '',
-
-    // true to set 'pointer' CSS cursor over enabled inputs and 'default' over disabled
-    cursor: false,
 
     // set true to inherit original input's class name
     inheritClass: false,
@@ -359,7 +353,6 @@ class EnhancedSwitch extends React.Component {
       background: '#fff',
       border: 0,
       opacity: 0,
-      cursor: disabled ? 'default' : 'pointer',
     };
 
     // Choose how to hide input
